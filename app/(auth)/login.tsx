@@ -4,6 +4,11 @@ import { KeyboardAvoidingView, Platform, Text, TextInput, TouchableOpacity, View
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function Login() {
+
+  const handleSubmit = (): void => {
+    router.push("/(tabs)/home");
+  }
+
   return (
     <SafeAreaView className='flex-1 bg-black'>
       <KeyboardAvoidingView
@@ -38,6 +43,7 @@ export default function Login() {
 
           <TouchableOpacity
             className='bg-blue-500 rounded-xl py-3 mt-3 mb-2'
+            onPress={handleSubmit}
           >
             <Text className='text-white font-semi-bold text-center text-lg'>Login</Text>
           </TouchableOpacity>
