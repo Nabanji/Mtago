@@ -54,7 +54,7 @@ export default function Register() {
           {/* Already have an account link */}
           <View className='flex-row justify-center'>
             <Text className='text-gray-400'>Already have an account? </Text>
-            <TouchableOpacity onPress={() => router.push("/(auth)/register")}>
+            <TouchableOpacity onPress={() => router.push("/(auth)/login")}>
               <Text className='text-blue-500 font-semibold'>Login</Text>
             </TouchableOpacity>
           </View>
